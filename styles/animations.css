@@ -12,3 +12,102 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes animation-pointer {
+  from {
+    left: -20px;
+  }
+  to {
+    left: -16px;
+  }
+}
+
+@keyframes animation-inside {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes animation-splash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.theme-menu__button:disabled:before {
+  animation: animation-pointer 0.5s ease-in-out infinite alternate;
+}
+
+.like-icon.is-liked .center {
+  animation: animation-inside 0.3s ease-in 0.1s 1 alternate;
+}
+
+.like-icon.is-liked .flash {
+  animation: animation-splash 0.3s ease-in 0.3s 1 alternate;
+}
+
+.like-icon .center {
+  transform-origin: center center;
+  transition: fill 0.1s linear;
+}
+
+.like-icon .base {
+  fill: var(--page-background);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .base {
+  fill: var(--text-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .base {
+  fill: var(--animation_color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .base {
+  fill: var(--animation_color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon .medium {
+  fill: var(--page-background);
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon:hover .medium {
+  fill: var(--text-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .medium {
+  fill: var(--animation_color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .medium {
+  fill: var(--animation_color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon .line {
+  fill: var(--text-color);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .line {
+  fill: var(--animation_color);
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon .flash {
+  opacity: 0;
+  fill: var(--animation_color);
+}
