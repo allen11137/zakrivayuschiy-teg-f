@@ -14,21 +14,17 @@
   --color-of-background: rgb(211, 211, 211);
   --mark_background: rgb(255, 255, 255);
   --header-of-background: rgb(255, 255, 255);
-  ---image-of-background: linear-gradient(
-      180deg,
-      rgb(231, 231, 231) 0.01%,
-      rgb(26, 26, 26)
-    ),
-    repeating-linear-gradient(
-      180deg,
-      rgb(211, 211, 211) 0 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
+  ---image-of-background: repeating-linear-gradient(
       90deg,
       rgb(211, 211, 211) 0 2px,
       transparent 2px 4px
-    );
+    ),
+    repeating-linear-gradient(
+      180deg,
+      rgb(211, 211, 211) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(180deg, rgb(231, 231, 231) 0.01%, rgb(26, 26, 26));
   --text-color: rgb(0, 0, 0);
   --border-color: rgb(0, 0, 0);
   --button-like-color-text: rgb(255, 255, 255);
@@ -45,13 +41,13 @@
   --page-background: rgb(0, 0, 0);
   --color-of-background: rgb(0, 0, 0);
   --header-of-background: rgb(0, 0, 0);
-  ---image-of-background: linear-gradient(
-      180deg,
-      rgb(0, 127, 12),
-      rgb(0, 67, 6)
+  ---image-of-background: repeating-linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 0 2px,
+      transparent 2px 4px
     ),
     repeating-linear-gradient(180deg, rgb(0, 0, 0) 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(90deg, rgb(0, 0, 0) 0 2px, transparent 2px 4px);
+    linear-gradient(180deg, rgb(0, 127, 12), rgb(0, 67, 6));
   --text-color: rgb(0, 204, 20);
   --border-color: rgb(0, 204, 20);
   --button-like-color-text: rgb(0, 204, 20);
@@ -70,11 +66,11 @@
     --color-of-background: rgb(0, 0, 0);
     --header-of-background: rgb(0, 0, 0);
     ---image-of-background: repeating-linear-gradient(
-        180deg,
+        90deg,
         rgb(0, 0, 0) 0 2px,
         transparent 2px 4px
       ),
-      repeating-linear-gradient(90deg, rgb(0, 0, 0) 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(180deg, rgb(0, 0, 0) 0 2px, transparent 2px 4px),
       linear-gradient(180deg, rgb(0, 127, 12), rgb(0, 67, 6));
     --text-color: rgb(0, 204, 20);
     --border-color: rgb(0, 204, 20);

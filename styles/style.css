@@ -34,19 +34,19 @@
   font-family: var(--accent-font), fantasy;
   background: var(--header-of-background);
   border: 2px solid var(--border-color);
-  margin: 102px 0;
-  padding: 136px 0 25px;
+  margin: 100px 0;
+  padding: 135px 0 22px;
 }
 
 .header-decoration {
-  font-size: clamp(3.064rem, 2.7rem + 1.502vw, 4.064rem);
+  font-size: clamp(3.0625rem, 2.4847rem + 2.4653vw, 4.0625rem);
   text-transform: uppercase;
 }
 
 .header-name {
-  font-size: clamp(0.874rem, 0.677rem + 0.845vw, 1.439rem);
+  font-size: clamp(0.875rem, 0.55rem + 1.3867vw, 1.4375rem);
   text-transform: uppercase;
-  margin: 20px 0 25px;
+  margin: 20px 0 26px;
 }
 
 .theme-menu__item {
@@ -124,7 +124,7 @@
 .section_content {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 47px;
 }
 
 .section_of_card {
@@ -134,8 +134,9 @@
 
 .title_of_card {
   font-variation-settings: "wght" var(--weight-font-title);
-  padding: 4px 10px;
+  padding: 5px 10px;
   font-size: 18px;
+  text-align: left;
 }
 
 .image_card {
@@ -178,7 +179,8 @@
   flex-direction: column;
   gap: 26px;
   font-size: 18px;
-  padding: 23px 25px;
+  padding: 26px 25px;
+  text-align: left;
 }
 
 .text_card_paragraph {
@@ -199,6 +201,11 @@
   inline-size: 40px;
   block-size: 36px;
   padding: 0;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .like-icon {
@@ -208,6 +215,7 @@
   fill: var(--text-color);
 }
 
+/**/
 .card__icon-button:focus {
   outline: none;
 }
@@ -241,6 +249,7 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--text-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .button:before {
@@ -278,8 +287,7 @@
 .floppy_picture {
   block-size: 29px;
   inline-size: 29px;
-  fill: var(--mix-blend-color);
-  mix-blend-mode: difference;
+  color: var(--text-color);
 }
 
 .picture-grey {
@@ -366,11 +374,15 @@
 
 @media (width <= 375px) {
   .header {
-    padding: 120px 0 25px 0px;
+    padding: 120px 0 20px 0px;
+  }
+
+  .text_card {
+  
   }
 
   .theme-menu__list {
-    margin: 0 40%;
+    margin: 0 41%;
   }
 
   .image-label {
@@ -398,7 +410,7 @@
     width: 80%;
   }
 
-  .floppy-image {
+  .floppy_picture {
     width: 28px;
     height: 28px;
   }
