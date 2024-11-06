@@ -378,7 +378,7 @@
   }
 
   .text_card {
-  
+    gap: 36px;
   }
 
   .theme-menu__list {
