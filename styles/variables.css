@@ -6,7 +6,7 @@
   --color-of-background: rgb(211, 211, 211);
   --mark_background: rgb(255, 255, 255);
   --header-of-background: rgb(255, 255, 255);
-  ---image-of-background: repeating-linear-gradient(
+  --image-of-background: repeating-linear-gradient(
       90deg,
       rgb(211, 211, 211) 0 2px,
       transparent 2px 4px

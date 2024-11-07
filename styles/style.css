@@ -21,7 +21,7 @@
   background-attachment: fixed;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--weight-font-text);
-  background-image: var(---image-of-background);
+  background-image: var(--image-of-background);
   color: var(--text-color);
   margin: 0 auto;
   text-align: center;
@@ -52,6 +52,11 @@
 .theme-menu__item {
   position: relative;
 }
+
+.text_card_paragraph {
+  padding: 0px 30px 0px 0px;
+   }
+
 
 .theme-menu__list {
   font-size: 14px;
@@ -147,7 +152,7 @@
 }
 
 .image_title {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-style: normal;
   line-height: normal;
@@ -157,7 +162,11 @@
   top: 27px;
   right: 25px;
   z-index: 1;
-  text-shadow: 1px var(--mark_background);
+  text-shadow:
+  -1px 0 var(--mark_background), 
+  0 1px var(--mark_background), 
+  1px 0 var(--mark_background), 
+  0 -1px var(--mark_background);
 }
 
 @supports (text-stroke: 1px var(--mark_background)) or
@@ -165,6 +174,7 @@
   .image_title {
     -webkit-text-stroke: 1px var(--mark_background);
     text-stroke: 1px var(--mark_background);
+    text-shadow: none;
   }
 }
 
@@ -177,14 +187,16 @@
 .text_card {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 27px;
   font-size: 18px;
-  padding: 26px 25px;
+  padding: 25px 25px;
   text-align: left;
 }
 
-.text_card_paragraph {
-  font-variation-settings: "wght" var(--weight-font-text);
+.container_of_text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
 
 .section_button_like {
@@ -198,11 +210,9 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  inline-size: 40px;
-  block-size: 36px;
   padding: 0;
   width: 38px;
-  height: 38px;
+  max-height: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,8 +295,8 @@
 }
 
 .floppy_picture {
-  block-size: 29px;
-  inline-size: 29px;
+  block-size: 21px;
+  inline-size: 21px;
   color: var(--button-like-color-text);
   mix-blend-mode: difference;
   z-index: 1;
@@ -354,7 +364,7 @@
 }
 
 .button_submit {
-  background: var(---page-background);
+  background: var(--page-background);
   text-transform: uppercase;
   width: 100%;
   padding: 10px 0;
@@ -371,7 +381,6 @@
 .dialog .floppy_picture {
   block-size: 39px;
   inline-size: 39px;
-  mix-blend-mode: normal;
 }
 
 @media (width <= 375px) {
@@ -379,17 +388,17 @@
     padding: 120px 0 20px 0px;
   }
 
-  .text_card {
-    gap: 36px;
-  }
-
   .theme-menu__list {
     margin: 0 41%;
   }
 
-  .image-label {
+  .image_title {
     top: 24px;
     right: 10px;
+  }
+
+  .text_card_paragraph {
+ padding: 0px 30px 0px 0px;
   }
 
   .save {
