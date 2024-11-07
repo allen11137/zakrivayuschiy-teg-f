@@ -55,8 +55,7 @@
 
 .text_card_paragraph {
   padding: 0px 30px 0px 0px;
-   }
-
+}
 
 .theme-menu__list {
   font-size: 14px;
@@ -163,10 +162,10 @@
   right: 25px;
   z-index: 1;
   text-shadow:
-  -1px 0 var(--mark_background), 
-  0 1px var(--mark_background), 
-  1px 0 var(--mark_background), 
-  0 -1px var(--mark_background);
+    -1px 0 var(--mark_background),
+    0 1px var(--mark_background),
+    1px 0 var(--mark_background),
+    0 -1px var(--mark_background);
 }
 
 @supports (text-stroke: 1px var(--mark_background)) or
@@ -225,7 +224,6 @@
   fill: var(--text-color);
 }
 
-/**/
 .card__icon-button:focus {
   outline: none;
 }
@@ -398,7 +396,7 @@
   }
 
   .text_card_paragraph {
- padding: 0px 30px 0px 0px;
+    padding: 0px 30px 0px 0px;
   }
 
   .save {
