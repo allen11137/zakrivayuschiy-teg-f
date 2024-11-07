@@ -287,7 +287,9 @@
 .floppy_picture {
   block-size: 29px;
   inline-size: 29px;
-  color: var(--text-color);
+  color: var(--button-like-color-text);
+  mix-blend-mode: difference;
+  z-index: 1;
 }
 
 .picture-grey {

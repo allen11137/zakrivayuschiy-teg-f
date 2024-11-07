@@ -27,7 +27,7 @@
     linear-gradient(180deg, rgb(231, 231, 231) 0.01%, rgb(26, 26, 26));
   --text-color: rgb(0, 0, 0);
   --border-color: rgb(0, 0, 0);
-  --button-like-color-text: rgb(255, 255, 255);
+  --button-like-color-text: var(--page-background);
   --animation_color: rgb(255, 0, 0);
   --mix-blend-color: rgb(255, 255, 255);
 }
@@ -50,7 +50,7 @@
     linear-gradient(180deg, rgb(0, 127, 12), rgb(0, 67, 6));
   --text-color: rgb(0, 204, 20);
   --border-color: rgb(0, 204, 20);
-  --button-like-color-text: rgb(0, 204, 20);
+  --button-like-color-text: var(--text-color);
   --animation_color: rgb(255, 0, 0);
   --mix-blend-color: rgb(0, 204, 20);
 }
@@ -74,7 +74,7 @@
       linear-gradient(180deg, rgb(0, 127, 12), rgb(0, 67, 6));
     --text-color: rgb(0, 204, 20);
     --border-color: rgb(0, 204, 20);
-    --button-like-color-text: rgb(0, 204, 20);
+    --button-like-color-text: var(--text-color);
     --animation_color: rgb(255, 0, 0);
     --mix-blend-color: rgb(0, 204, 20);
   }
